@@ -5,7 +5,7 @@ This project provides transcription, error evaluation, and Hindi-specific tokeni
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Batch Audio Processing**  
   Download and process audio files in configurable batches.
