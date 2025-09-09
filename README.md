@@ -5,7 +5,7 @@ This project provides transcription, error evaluation, and Hindi-specific tokeni
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Batch Audio Processing**  
   Download and process audio files in configurable batches.
@@ -30,7 +30,7 @@ This project provides transcription, error evaluation, and Hindi-specific tokeni
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python **3.7+**
 - **FFmpeg** (for audio conversion)
@@ -41,7 +41,7 @@ This project provides transcription, error evaluation, and Hindi-specific tokeni
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Edit the following settings in your script:
 
@@ -58,7 +58,7 @@ MAX_ROWS = 10000
 
 ---
 
-## ▶️ Usage
+## Usage
 
 ### 1. Run the Transcription Pipeline
 ```python
@@ -107,7 +107,7 @@ def mer_errors(reference, hypothesis, tokenizer):
 
 ---
 
-## 📂 Input & Output
+## Input & Output
 
 **Input CSV Structure:**
 ```csv
@@ -122,7 +122,7 @@ http://example.com/audio1.ogg,reference_text,hypothesis_text
 
 ---
 
-## 🛠️ Error Handling
+## Error Handling
 
 - **Network Issues** → retries & logs skipped rows  
 - **FFmpeg Conversion Errors** → captured and logged  
@@ -131,7 +131,7 @@ http://example.com/audio1.ogg,reference_text,hypothesis_text
 
 ---
 
-## 📊 Performance
+## Performance
 
 - Default batch size: **50 files** (configurable)  
 - Memory-efficient for large datasets  
@@ -140,7 +140,7 @@ http://example.com/audio1.ogg,reference_text,hypothesis_text
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -156,7 +156,7 @@ project/
 
 ---
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 1. **Install Python**
    ```bash
@@ -189,7 +189,7 @@ project/
 
 ---
 
-## 🐞 Troubleshooting
+## Troubleshooting
 
 ### 1. FFmpeg Not Found
 ```bash
@@ -220,7 +220,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 ---
 
-## 📖 API Reference
+## API Reference
 
 **Enable ASR Service**
 ```http
@@ -244,7 +244,7 @@ Response:
 
 ---
 
-## ⚡ Advanced Configuration
+## Advanced Configuration
 
 - **Batch Size** → `BATCH_SIZE = 50`  
 - **Max Rows** → `MAX_ROWS = 10000`  
@@ -263,7 +263,7 @@ SKIP_CONVERSION_ERRORS = False
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repo  
 2. Create a feature branch  
@@ -283,13 +283,13 @@ SKIP_CONVERSION_ERRORS = False
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ---
 
-## 💬 Support
+## Support
 
 - Check troubleshooting section  
 - Review API documentation  
@@ -303,7 +303,7 @@ When reporting issues, include:
 
 ---
 
-## 📌 Version History
+## Version History
 
 - **v1.2 (Current)** – Added evaluation metrics, custom tokenizer, enhanced error handling  
 - **v1.1** – Batch processing, error tracking, file conversion  
@@ -311,7 +311,7 @@ When reporting issues, include:
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Multi-language support  
 - [ ] Real-time transcription  
