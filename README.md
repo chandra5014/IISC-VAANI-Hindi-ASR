@@ -134,18 +134,19 @@ Automatic retry mechanisms
 
 # File Structure
 
-project/
-├── vaani_asr_transcription.py
-├── downloaded_ogg/          # Temporary OGG files
-├── converted_wav/           # Temporary WAV files
-├── hindi_data/              # Tokenizer training data
-├── output/
-│   ├── Transcription_batch_*.csv
-│   └── skipped_rows.csv
-└── hindi_data_tokenizer.json
-Troubleshooting
-Common Issues
-FFmpeg Not Found
+# File Structure 
+
+project/ 
+
+├── vaani_asr_transcription.py 
+├── downloaded_ogg/ # Temporary OGG files 
+├── converted_wav/ # Temporary WAV files
+├── hindi_data/ # Tokenizer training data 
+├── output/ │ 
+├── Transcription_batch_*.csv 
+│ └── skipped_rows.csv 
+  └── hindi_data_tokenizer.json Troubleshooting
+
 
 Install FFmpeg: sudo apt install ffmpeg
 
