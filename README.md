@@ -1,4 +1,5 @@
 #Vaani ASR Transcription and Evaluation System
+
 Overview
 This Python script provides a comprehensive Automatic Speech Recognition (ASR) evaluation framework specifically designed for Hindi language processing. The system integrates with the Vaani ASR API to perform batch audio transcription and quality assessment through a multi-stage pipeline.
 
@@ -36,7 +37,7 @@ pip install requests pandas openpyxl tokenizers transformers numpy
 Configuration
 API Settings
 BASE_URL = "https://asr.vaani-artpark.in"
-API_KEY = "GCTYVSHR5609345XCSMV"  # Replace with your API key
+API_KEY = "XXXXXXXXXXXXXXXX"  # Replace with your API key
 LANGUAGE = "hi"  # Hindi language code
 File Paths
 INPUT_CSV = "/path/to/your/input.csv"
