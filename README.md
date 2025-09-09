@@ -132,7 +132,7 @@ Built-in delays between requests
 
 Automatic retry mechanisms
 
-File Structure
+# File Structure
 project/
 ├── vaani_asr_transcription.py
 ├── downloaded_ogg/          # Temporary OGG files
