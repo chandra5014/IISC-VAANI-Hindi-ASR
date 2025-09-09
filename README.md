@@ -28,7 +28,7 @@ API Settings
 python
 Copy
 BASE_URL = "https://asr.vaani-artpark.in"
-API_KEY = "GCTYVSHR5609345XCSMV"  # Replace with your API key
+API_KEY = "XXXXXXXXXXXXXXXXXX"  # Replace with your API key
 LANGUAGE = "hi"  # Hindi language code
 File Paths
 python
