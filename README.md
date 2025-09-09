@@ -1,5 +1,103 @@
 # Vaani ASR Transcription and Evaluation System
 
+This Python script provides a comprehensive Automatic Speech Recognition (ASR) evaluation framework specifically designed for Hindi language processing.
+It integrates with the Vaani ASR API to perform batch audio transcription and quality assessment through a multi-stage pipeline.
+
+Features
+Core Functionality
+
+Batch Audio Processing: Downloads and processes audio files in configurable batches.
+
+Format Conversion: Converts OGG audio files to WAV format using FFmpeg.
+
+ASR Integration: Interfaces with Vaani ASR API for Hindi transcription.
+
+Quality Metrics: Calculates WER, CER, and MER for transcription accuracy.
+
+Custom Tokenization: Hindi-specific tokenizer with punctuation handling.
+
+Error Handling: Robust error management with skipped row tracking.
+
+Supported Metrics
+
+WER (Word Error Rate) – Measures word-level transcription accuracy.
+
+CER (Character Error Rate) – Evaluates character-level precision.
+
+MER (Match Error Rate) – Alternative error measurement methodology.
+
+Prerequisites
+System Requirements
+
+Python 3.7+
+
+FFmpeg (for audio conversion)
+
+Google Colab (as configured)
+
+Required Libraries
+
+!pip install requests pandas openpyxl tokenizers transformers numpy
+
+Configuration
+API Settings
+
+BASE_URL = "https://asr.vaani-artpark.in"
+API_KEY = "YOUR_API_KEY"   # Replace with your API key
+LANGUAGE = "hi"            # Hindi language code
+
+File Paths
+
+INPUT_CSV = "/path/to/your/input.csv"
+OUTPUT_DIR = "/path/to/output/directory"
+BATCH_SIZE = 50    # Configurable batch size
+MAX_ROWS = 10000   # Maximum rows to process
+
+Usage
+1. Audio Transcription Pipeline
+
+Main function:
+
+process_batches(INPUT_CSV, OUTPUT_DIR, BATCH_SIZE, MAX_ROWS)
+
+Workflow Steps:
+
+- Enables ASR service (7-minute initialization wait).
+
+- Processes CSV file in configurable batches.
+
+- Downloads audio files from URLs.
+
+- Converts OGG → WAV format.
+
+- Sends audio to Vaani ASR API.
+
+- Saves transcriptions to batch CSV files.
+
+- Tracks & logs skipped rows with error reasons.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Vaani ASR Transcription and Evaluation System
+
 Overview
 This Python script provides a comprehensive Automatic Speech Recognition (ASR) evaluation framework specifically designed for Hindi language processing. The system integrates with the Vaani ASR API to perform batch audio transcription and quality assessment through a multi-stage pipeline.
 
